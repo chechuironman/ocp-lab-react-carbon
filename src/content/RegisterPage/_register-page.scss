@@ -1,0 +1,21 @@
+.form_lab {
+  padding: 2rem;
+  margin: 2rem;
+  display: flex;
+  border: none;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.image-centered{
+  align-items: center;
+  display: flex;
+}
+.formtext {
+  position: relative;
+  top: -48px;
+  background: white;
+  padding: 7px;
+  width: 57px;
+  color: red;
+}
