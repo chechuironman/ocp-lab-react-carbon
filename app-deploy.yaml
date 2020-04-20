@@ -1,0 +1,36 @@
+apiVersion: appsody.dev/v1beta1
+kind: AppsodyApplication
+metadata:
+  annotations:
+    image.opencontainers.org/created: "2020-03-03T16:30:52+01:00"
+    stack.appsody.dev/authors: Sam Roberts <vieuxtech@gmail.com>
+    stack.appsody.dev/configured: dev.local/appsody/react:0.3
+    stack.appsody.dev/created: "2020-03-03T14:25:25+01:00"
+    stack.appsody.dev/description: Runtime for Node.js applications
+    stack.appsody.dev/licenses: Apache-2.0
+    stack.appsody.dev/tag: dev.local/appsody/react:0.3.3
+    stack.appsody.dev/title: Node.js
+  creationTimestamp: null
+  labels:
+    image.opencontainers.org/title: ocp-lab-frontend-react
+    stack.appsody.dev/id: react
+    stack.appsody.dev/version: 0.3.3
+  name: ui
+  namespace: cloud-lab
+spec:
+  applicationImage: dev.local/ocp-lab-frontend-react
+  createKnativeService: false
+  expose: true
+  service:
+    port: 3000
+    type: NodePort
+  stack: react
+  version: 1.0.0
+  volumeMounts:
+  - name: config-volume
+    mountPath: /project/user-app/src/config
+  volumes:
+    - name: config-volume
+      configMap:
+        name: cloud-lab-ui
+status: {}
