@@ -3,13 +3,13 @@ kind: AppsodyApplication
 metadata:
   annotations:
     image.opencontainers.org/created: "2020-03-03T16:30:52+01:00"
-    stack.appsody.dev/authors: Sam Roberts <vieuxtech@gmail.com>
+    stack.appsody.dev/authors: Chechu <chechuironman@gmail.com>
     stack.appsody.dev/configured: dev.local/appsody/react:0.3
     stack.appsody.dev/created: "2020-03-03T14:25:25+01:00"
-    stack.appsody.dev/description: Runtime for Node.js applications
+    stack.appsody.dev/description: Runtime for React applications
     stack.appsody.dev/licenses: Apache-2.0
-    stack.appsody.dev/tag: dev.local/appsody/react:0.3.3
-    stack.appsody.dev/title: Node.js
+    stack.appsody.dev/tag: dev.local/appsody/react:0.6.0
+    stack.appsody.dev/title: React
   creationTimestamp: null
   labels:
     image.opencontainers.org/title: ocp-lab-frontend-react
